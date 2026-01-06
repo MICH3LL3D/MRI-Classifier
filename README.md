@@ -1,4 +1,4 @@
-# MRI Classifier
+# MRI Alzheimer's Classifier
 Task: Multi-class MRI classification (Non Demented, Very Mild, Mild, Moderate)
 
 # 1. Motivation and problem statement
@@ -36,6 +36,8 @@ number of dataset class sizes. So I also decided to use precision and recall. We
 because, while we would rather have false positives instead of false negatives, we also don’t
 want to waste too many resources on finding out they don’t have Alzheimer’s. The left contains
 the confusion matrix with just weighting while the right is the updated with reweighting results.
+![Alt text](/mri%20classifier%20images/initial%20testing%20results.png)
+![Alt text](/mri%20classifier%20images/results%20after%20weight%20redistribution.png)
 
 # 5. Issues Faced
 I initially used the tf.keras.utils.image_dataset_from_directory function to split the training,
